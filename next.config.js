@@ -5,16 +5,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-  experimental: {
-    workerThreads: false,
-    cpus: 1,
-  },
 };
 
 module.exports = nextConfig;
