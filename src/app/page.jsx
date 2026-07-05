@@ -52,9 +52,7 @@ export default function Home() {
       <nav className="border-b border-gray-200">
         <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">TD</span>
-            </div>
+            <img src="/logo-icon.svg" alt="Takumi Digital" className="w-8 h-8" />
             <span className="font-bold text-lg text-gray-900">Takumi Digital</span>
           </div>
           <div className="text-sm text-gray-500">AEO Specialists</div>
@@ -357,9 +355,7 @@ export default function Home() {
       <footer className="py-8 px-4 border-t border-gray-200">
         <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
-            <div className="w-7 h-7 bg-blue-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xs">TD</span>
-            </div>
+            <img src="/logo-icon.svg" alt="Takumi Digital" className="w-7 h-7" />
             <span className="font-semibold text-gray-900">Takumi Digital</span>
           </div>
           <p className="text-sm text-gray-400">
