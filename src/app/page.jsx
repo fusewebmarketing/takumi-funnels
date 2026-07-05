@@ -47,7 +47,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen bg-[#0A0A0A]">
       {/* Navigation */}
       <nav className="border-b border-gray-800">
         <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
@@ -62,7 +62,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-900/30 text-blue-400 text-sm font-medium mb-8">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#C9A227]/10 text-[#C9A227] text-sm font-medium mb-8">
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
             </svg>
@@ -71,7 +71,7 @@ export default function Home() {
           
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
             Is Your Business{" "}
-            <span className="text-blue-400">Invisible to AI?</span>
+            <span className="text-[#C9A227]">Invisible to AI?</span>
           </h1>
           
           <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-4">
@@ -87,19 +87,19 @@ export default function Home() {
           {/* Social Proof */}
           <div className="flex items-center justify-center gap-8 text-sm text-gray-400 mb-16">
             <div className="flex items-center gap-2">
-              <svg className="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5 text-[#C9A227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
               <span>100% Free</span>
             </div>
             <div className="flex items-center gap-2">
-              <svg className="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5 text-[#C9A227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
               <span>No Credit Card</span>
             </div>
             <div className="flex items-center gap-2">
-              <svg className="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5 text-[#C9A227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
               <span>Delivered in 24h</span>
@@ -109,10 +109,10 @@ export default function Home() {
       </section>
 
       {/* Form Section */}
-      <section className="py-16 px-4 bg-gray-900">
+      <section className="py-16 px-4 bg-[#0A0A0A]">
         <div className="max-w-xl mx-auto">
           {!isSubmitted ? (
-            <div className="bg-gray-800 rounded-2xl shadow-lg p-8 sm:p-10">
+            <div className="bg-[#111111] border border-gray-800 rounded-2xl shadow-lg p-8 sm:p-10">
               <h2 className="text-2xl font-bold text-white mb-2 text-center">
                 Get Your Free AEO Audit
               </h2>
@@ -138,7 +138,7 @@ export default function Home() {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-600 bg-gray-700 text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-700 bg-[#1A1A1A] text-white focus:ring-2 focus:ring-[#C9A227] focus:border-transparent outline-none transition-all"
                     placeholder="John Smith"
                   />
                 </div>
@@ -154,7 +154,7 @@ export default function Home() {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-600 bg-gray-700 text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-700 bg-[#1A1A1A] text-white focus:ring-2 focus:ring-[#C9A227] focus:border-transparent outline-none transition-all"
                     placeholder="john@yourbusiness.com"
                   />
                 </div>
@@ -170,7 +170,7 @@ export default function Home() {
                     required
                     value={formData.businessName}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-600 bg-gray-700 text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-700 bg-[#1A1A1A] text-white focus:ring-2 focus:ring-[#C9A227] focus:border-transparent outline-none transition-all"
                     placeholder="Your Business LLC"
                   />
                 </div>
@@ -186,7 +186,7 @@ export default function Home() {
                     required
                     value={formData.website}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-600 bg-gray-700 text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-700 bg-[#1A1A1A] text-white focus:ring-2 focus:ring-[#C9A227] focus:border-transparent outline-none transition-all"
                     placeholder="https://yourbusiness.com"
                   />
                 </div>
@@ -201,7 +201,7 @@ export default function Home() {
                     required
                     value={formData.industry}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-600 bg-gray-700 text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-700 bg-[#1A1A1A] text-white focus:ring-2 focus:ring-[#C9A227] focus:border-transparent outline-none transition-all"
                   >
                     <option value="">Select your industry</option>
                     <option value="healthcare">Healthcare / Medical</option>
@@ -220,7 +220,7 @@ export default function Home() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full py-4 px-6 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
+                  className="w-full py-4 px-6 bg-[#C9A227] text-black font-semibold rounded-lg hover:bg-[#B8921F] transition-colors flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
                 >
                   {isSubmitting ? (
                     "Processing..."
@@ -240,9 +240,9 @@ export default function Home() {
               </p>
             </div>
           ) : (
-            <div className="bg-gray-800 rounded-2xl shadow-lg p-8 sm:p-10 text-center">
-              <div className="w-16 h-16 bg-green-900/30 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg className="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="bg-[#111111] border border-gray-800 rounded-2xl shadow-lg p-8 sm:p-10 text-center">
+              <div className="w-16 h-16 bg-[#C9A227]/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-8 h-8 text-[#C9A227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
@@ -253,7 +253,7 @@ export default function Home() {
                 Thanks, {formData.name}! We've received your request for <strong className="text-white">{formData.businessName}</strong>.
                 Your personalized AEO audit will be delivered to <strong className="text-white">{formData.email}</strong> within 24 hours.
               </p>
-              <div className="bg-blue-900/30 rounded-lg p-4 text-sm text-blue-400">
+              <div className="bg-[#C9A227]/10 rounded-lg p-4 text-sm text-[#C9A227]">
                 <strong>What's next?</strong> Check your inbox for a confirmation email. 
                 We'll also send you our "3 AEO Quick Wins" guide while you wait.
               </div>
@@ -263,7 +263,7 @@ export default function Home() {
       </section>
 
       {/* What You Get Section */}
-      <section className="py-20 px-4 bg-black">
+      <section className="py-20 px-4 bg-[#0A0A0A]">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-white text-center mb-4">
             What's Included in Your Free Audit
@@ -273,9 +273,9 @@ export default function Home() {
           </p>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-gray-900 border border-gray-700 rounded-xl p-6">
-              <div className="w-12 h-12 bg-blue-900/30 rounded-lg flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="bg-[#111111] border border-gray-800 rounded-xl p-6">
+              <div className="w-12 h-12 bg-[#C9A227]/10 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-[#C9A227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                 </svg>
               </div>
@@ -286,9 +286,9 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="bg-gray-900 border border-gray-700 rounded-xl p-6">
-              <div className="w-12 h-12 bg-blue-900/30 rounded-lg flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="bg-[#111111] border border-gray-800 rounded-xl p-6">
+              <div className="w-12 h-12 bg-[#C9A227]/10 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-[#C9A227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
               </div>
@@ -299,9 +299,9 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="bg-gray-900 border border-gray-700 rounded-xl p-6">
-              <div className="w-12 h-12 bg-blue-900/30 rounded-lg flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="bg-[#111111] border border-gray-800 rounded-xl p-6">
+              <div className="w-12 h-12 bg-[#C9A227]/10 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-[#C9A227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
@@ -316,32 +316,32 @@ export default function Home() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 px-4 bg-gray-900">
+      <section className="py-16 px-4 bg-[#0A0A0A]">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-2xl font-bold text-white text-center mb-8">
             Frequently Asked Questions
           </h2>
 
           <div className="space-y-4">
-            <div className="bg-gray-800 rounded-lg p-6">
+            <div className="bg-[#111111] border border-gray-800 rounded-lg p-6">
               <h3 className="font-semibold text-white mb-2">What is AEO (Answer Engine Optimization)?</h3>
               <p className="text-gray-400 text-sm">
                 AEO is the practice of optimizing your business so AI assistants like ChatGPT, Google SGE, and Siri can find and recommend you when customers ask questions. It's the evolution of SEO for the AI age.
               </p>
             </div>
-            <div className="bg-gray-800 rounded-lg p-6">
+            <div className="bg-[#111111] border border-gray-800 rounded-lg p-6">
               <h3 className="font-semibold text-white mb-2">How long does the audit take?</h3>
               <p className="text-gray-400 text-sm">
                 We deliver your personalized audit within 24 hours of receiving your request. Each audit is handcrafted by our team, not automated.
               </p>
             </div>
-            <div className="bg-gray-800 rounded-lg p-6">
+            <div className="bg-[#111111] border border-gray-800 rounded-lg p-6">
               <h3 className="font-semibold text-white mb-2">Is this really free?</h3>
               <p className="text-gray-400 text-sm">
                 Yes, 100% free. No credit card required. We offer this audit to demonstrate the value of AEO and how it can transform your business visibility.
               </p>
             </div>
-            <div className="bg-gray-800 rounded-lg p-6">
+            <div className="bg-[#111111] border border-gray-800 rounded-lg p-6">
               <h3 className="font-semibold text-white mb-2">What industries do you work with?</h3>
               <p className="text-gray-400 text-sm">
                 We specialize in local service businesses: healthcare, legal, home services, restaurants, retail, real estate, and professional services.
